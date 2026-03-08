@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - Ecovision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="signup-body">
+
+<h2 class="signup-title">SIGN IN</h2>
+<p class="signup-subtitle">
+    Sign in to access the Ecovision platform for seasonal detection using plant images and environmental parameters
+</p>
+
+<div class="signup-box">
+    <form method="POST" action="/signin">
+
+    <input type="text"
+           name="username"
+           placeholder="Username or Email"
+           class="full"
+           required>
+
+    <input type="password"
+           name="password"
+           placeholder="Password"
+           class="full"
+           required>
+
+    <button class="btn signup-btn">Sign In</button>
+
+    <p class="signin-text">
+        Don't have an account? <a href="/signup">Sign Up</a>
+    </p>
+
+</form>
+
+
+</div>
+
+</body>
+</html>

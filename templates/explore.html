@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Graphs - Ecovision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>Ecovision</h2>
+    <a href="/home">Home</a>
+    <a href="/logout">Logout</a>
+</nav>
+
+<div class="container">
+    <h1>Data Visualization</h1>
+    <p>Explore seasonal trends and environmental parameters</p>
+
+    <!-- Example Graphs -->
+    <div class="graph-box">
+        <h3>Temperature vs Season</h3>
+        <img src="{{ url_for('static', filename='images/temp_graph.png') }}" alt="Temperature Graph">
+    </div>
+
+    <div class="graph-box">
+        <h3>Humidity Analysis</h3>
+        <img src="{{ url_for('static', filename='images/humidity_graph.png') }}" alt="Humidity Graph">
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account - Ecovision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="signup-body">
+
+<h2 class="signup-title">CREATE ACCOUNT</h2>
+
+<p class="signup-subtitle">
+    Sign up to access the Ecovision platform for seasonal detection using plant images and environmental parameters
+</p>
+
+<div class="signup-box">
+    <form action="/signup" method="POST">
+
+
+        <div class="row">
+            <input type="text"
+                   name="username"
+                   placeholder="Username (min. 6 characters)"
+                   required>
+
+            <input type="text"
+                   name="fullname"
+                   placeholder="Full Name (letters and spaces only)"
+                   required>
+        </div>
+
+        <div class="row">
+            <input type="email"
+                   name="email"
+                   placeholder="Your Email"
+                   required>
+
+            <input type="text"
+                   name="mobile"
+                   placeholder="Mobile Number (10 digits, starts with 6-9)"
+                   required>
+        </div>
+
+        <input type="password"
+               name="password"
+               placeholder="Password (min. 8 chars, uppercase, lowercase, number)"
+               class="full"
+               required>
+
+        <button type="submit" class="btn signup-btn">
+            Sign Up
+        </button>
+
+        <p class="signin-text">
+            Already have an account? <a href="/signin">Sign In</a>
+        </p>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecovision Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Ecovision<span>.</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="/prediction" class="nav-link">Prediction</a>
+
+        <a href="#">Data Visualization</a>
+        <a href="#">Notebooks</a>
+        <a href="/logout">
+            <button class="btn">Log Out</button>
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>
+            Ecovision Deep Learning-<br>
+            Based Seasonal Detection<br>
+            Using Plant Images and<br>
+            Environmental Parameters
+        </h1>
+
+        <p>
+            Advanced AI System for Seasonal Change Detection in Plants
+        </p>
+
+        <a href="/prediction" class="btn try-btn">Try Now</a>
+
+        <a href="/explore" class="explore-btn">
+    Explore Graphs
+</a>
+
+    </div>
+</section>
+
+</body>
+</html>
